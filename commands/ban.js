@@ -10,7 +10,7 @@ exports.run = function(client, message, args) {
 		return;
 	}
 	if(message.mentions.users.size > 1) {
-		message.channel.send(`*${message.author} You can only mention one person! :frown:**`).catch(console.error);
+		message.channel.send(`**${message.author} You can only mention one person! :frowning:**`).catch(console.error);
 		return;
 	}
 	if(reason.length == 0) {
@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
 	}
 	if(!(message.member.hasPermissions("BAN_MEMBERS"))) return message.channel.send(`**${message.author} :raised_hand: You don't have permissions to use this command!**`);
 	message.mentions.members.first().ban(reason);
-	embed1.setTitle("__User Banned__")
+	embed1.setTitle("__User Banned!__")
 	.setDescription(`${message.mentions.members.first()} has been banned!\n Reason: ${reason} :hammer:`)
 	.setFooter("This bot is still in BETA, so expect commands to be broken sometimes.")
 	.setColor("#ffa500")
