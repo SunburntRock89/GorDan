@@ -10,6 +10,7 @@ exports.run = function(client, message, args) {
 	.addField("help", "DMs you this embed. `;;help`")
 	.addField("invite", "Posts an invite link to add GorDanDEV into your server. `;;invite`")
 	.addField("ping", "Pings your connection to the bot. `;;ping`")
+	.addField("serverinfo", "Posts some basic info about the server. `;;serverinfo`")
 	.setColor("#add8e6")
 	.setThumbnail("https://cdn.discordapp.com/avatars/366148270692499458/d0b05664d24935b1f93ec8ebe2db2535.webp?size=1024")
 	.setFooter("This bot is still in BETA, so expect commands to be broken sometimes.")
